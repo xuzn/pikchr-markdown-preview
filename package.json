@@ -1,0 +1,44 @@
+{
+  "name": "pikchr-markdown-preview",
+  "version": "0.0.1",
+  "displayName": "Pikchr Markdown Preview",
+  "description": "Adds Pikchr support to VS Code's built-in Markdown preview",
+  "keywords": [
+    "pikchr",
+    "markdown"
+  ],
+  "icon": "logo.jpg",
+  "publisher": "xuzn",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/xuzn/pikchr-markdown-preview"
+  },
+  "bugs": {
+    "url": "https://github.com/xuzn/pikchr-markdown-preview/issues"
+  },
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "contributes": {
+    "markdown.markdownItPlugins": true
+  },
+  "main": "./index.js",
+  "browser": "./dist/web/index.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -w -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/vscode": "^1.61.0",
+    "@types/markdown-it": "^12.2.3",
+    "markdown-it": "^12.2.0",
+    "typescript": "^4.4.4"
+  }
+}
