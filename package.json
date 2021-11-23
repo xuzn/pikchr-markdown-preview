@@ -27,7 +27,6 @@
     "markdown.markdownItPlugins": true
   },
   "main": "./index.js",
-  "browser": "./dist/web/index.js",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
