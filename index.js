@@ -20,10 +20,18 @@ exports.pikchr = pikchr;
 function markdownItPikchr(md) {
     md.renderer.rules.fence = (tokens, idx, options, env, self) => {
         const token = tokens[idx];
-        var content = '';
-        var result = (0, exports.pikchr)(token.content);
-        content = result === null || result === void 0 ? void 0 : result.svg;
-        return content;
+        if (token.info.trim() === "pikchr") {
+            var result = (0, exports.pikchr)(token.content);
+            if (result.svg === undefined) {
+                return token.content;
+            }
+            else {
+                return result.svg;
+            }
+        }
+        else {
+            return token.content;
+        }
     };
 }
 function activate(context) {

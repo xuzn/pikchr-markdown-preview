@@ -25,10 +25,16 @@ export const pikchr = (source: string): PikchrResult => {
 function markdownItPikchr(md: MarkdownIt) {
   md.renderer.rules.fence = (tokens, idx, options, env, self) => {
     const token = tokens[idx];
-    var content = '';
-    var result = pikchr(token.content);
-    content = result?.svg;
-    return content;
+    if (token.info.trim() === "pikchr") {
+      var result = pikchr(token.content);
+      if (result.svg === undefined) {
+        return token.content;
+      } else {
+        return result.svg;
+      }
+    } else {
+      return token.content;
+    }
   };
 }
 
