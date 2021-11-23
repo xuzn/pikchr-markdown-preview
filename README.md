@@ -2,7 +2,7 @@
 
 Adds Pikchr support to VS Code's built-in Markdown preview
 
-![A pikchr diagram in VS Code's built-in markdown preview](https://github.com/xuzn/pikchr-markdown-preview/raw/master/example.png)
+![A pikchr diagram in VS Code's built-in markdown preview](https://raw.githubusercontent.com/xuzn/pikchr-markdown-preview/main/example.png)
 
 ## Usage
 
