@@ -1,6 +1,6 @@
 {
   "name": "pikchr-markdown-preview",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "displayName": "Pikchr Markdown Preview",
   "description": "Adds Pikchr support to VS Code's built-in Markdown preview",
   "keywords": [
