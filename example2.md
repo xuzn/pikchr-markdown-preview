@@ -1,5 +1,3 @@
-# Pikchr
-
 ```pikchr
 color = white
 arrow right 200% "Markdown" "Source"

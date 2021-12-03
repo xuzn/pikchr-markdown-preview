@@ -5,6 +5,8 @@
   "description": "Adds Pikchr support to VS Code's built-in Markdown preview",
   "keywords": [
     "pikchr",
+    "railroad",
+    "syntax",
     "markdown"
   ],
   "icon": "logo.jpg",
@@ -20,7 +22,7 @@
     "vscode": "^1.61.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
   "activationEvents": [],
   "contributes": {
